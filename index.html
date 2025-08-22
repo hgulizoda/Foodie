@@ -4,21 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foodie</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
-    <header>
-      <a href="/"><p>Foodie</p></a>
-      <div>
-        <nav>
-          <a href="/"> Home </a>
-          <a href="#about"> About Us </a>
-          <a href="#howItWorks"> How it works </a>
-          <a href="#screenshots"> Screenshots </a>
-          <a href="#testimonials"> Testimonials </a>
-          <button>Login</button>
-        </nav>
+    <div class="opening">
+      <header class="container header">
+        <a href="/" class="header-logo"
+          >F<span style="color: #fe724c">oo</span>die</a
+        >
+        <div class="header-right">
+          <nav class="header-right_nav">
+            <a href="/"> Home </a>
+            <a href="#about"> About Us </a>
+            <a href="#howItWorks"> How it works </a>
+            <a href="#screenshots"> Screenshots </a>
+            <a href="#testimonials"> Testimonials </a>
+            <button class="btn">Login</button>
+          </nav>
+        </div>
+      </header>
+      <div class="opening-bottom container-sm">
+        <div class="opening-bottom_content">
+          <h1>Awesome App for Your Modern Lifestyle</h1>
+          <p>
+            We'll help you make your plans, inform you about the best events
+            happening all around the world, tell you all about the best places
+            to eat in the city and much much more. 
+          </p>
+          <div class="buttons">
+            <button class="buttons-appStore btn">
+              <img src="./assests/icons/appleLogo.svg" alt="" />
+              <span>App Store</span>
+            </button>
+            <button class="buttons-googlePlay btn">
+              <img src="./assests/icons/googlePlay.svg" alt="" />
+              <span>Google Play</span>
+            </button>
+          </div>
+        </div>
+        <img src="./assests/2.png" alt="" />
+        <div class="opening-circle"></div>
       </div>
-    </header>
+    </div>
   </body>
 </html>

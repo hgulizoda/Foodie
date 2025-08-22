@@ -1,0 +1,90 @@
+.opening {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../assests/heroImage.png");
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 6.4rem;
+  position: relative;
+  z-index: -2;
+  &-circle {
+    position: absolute;
+    width: 111.4rem;
+    height: 111.4rem;
+    border-radius: 50%;
+    background-color: $primary-orange;
+    z-index: -1;
+    bottom: 6.4rem;
+    right: -20.4rem;
+  }
+  .header {
+    padding-block: 5.7rem;
+    @include display(row, 0, center, space-between);
+    &-logo {
+      font-size: 4.5rem;
+      font-family: $logo-font;
+      font-weight: 900;
+      color: $primary-white;
+    }
+    &-right {
+      &_nav {
+        @include display(row, 3rem, center, center);
+        a {
+          z-index: 33;
+          font-size: 1.6rem;
+          color: $primary-white;
+          font-family: $small-font;
+          font-weight: 700;
+          transition: all 0.3s;
+          &:hover {
+            color: $primary-orange;
+          }
+        }
+      }
+      .btn {
+        background-color: transparent;
+        border: 1px solid $primary-white;
+        color: $primary-white;
+        transition: all 0.3s;
+        font-weight: 700;
+        &:hover {
+          background-color: $primary-white;
+          color: $primary-orange;
+        }
+      }
+    }
+  }
+  &-bottom {
+    z-index: 3;
+    @include display(row, 20rem, center, space-between);
+
+    &_content {
+      h1 {
+        font-size: 4.6rem;
+        color: $primary-white;
+        font-family: $heading-font;
+      }
+      p {
+        font-family: $small-font;
+        font-size: 1.7rem;
+        line-height: 2.3rem;
+        color: $primary-white;
+        margin-block: 2.7rem;
+      }
+      .buttons {
+        @include display(row, 1.6rem, center, left);
+        .btn {
+          gap: 1rem;
+          background-color: transparent;
+          border: 1px solid $primary-white;
+          color: $primary-white;
+          height: 5.5rem;
+          transition: all 0.3s;
+          &:hover {
+            background-color: $primary-orange;
+            border: 1px solid $primary-orange;
+          }
+        }
+      }
+    }
+  }
+}

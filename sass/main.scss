@@ -1,6 +1,9 @@
-@import url(_opening.scss);
-@import url(_aboutUs.scss);
-@import url(_howItWorks.scss);
-@import url(_screenshots.scss);
-@import url(_testimonials.scss);
-@import url(_footer.scss);
+@import "./abstract/variables";
+@import "./abstract/mixins";
+@import "./base/reset";
+@import "./layout/opening";
+@import "./layout/aboutUs";
+@import "./layout/howItWorks";
+@import "./layout/screenshots";
+@import "./layout/testimonials";
+@import "./layout/footer";
