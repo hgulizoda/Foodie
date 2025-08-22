@@ -1,0 +1,90 @@
+.howItWorks {
+  background-color: $primary-orange;
+  padding-block: 7.8rem;
+  .container {
+    @include display(row, 12rem, center, space-between);
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
+  }
+  .relative {
+    position: relative;
+    .absolute {
+      position: absolute;
+      z-index: 1;
+      right: -10rem;
+      @media (max-width: 1200px) {
+        width: 60rem;
+      }
+    }
+  }
+  &-img {
+    width: 43rem;
+    margin-right: 10rem;
+    position: relative;
+    z-index: 2;
+    @media (max-width: 1200px) {
+      width: 30rem;
+      margin-right: 0;
+    }
+  }
+  &-content {
+    h2 {
+      color: $primary-white;
+      @media (max-width: 1000px) {
+        text-align: center;
+      }
+    }
+    hr {
+      border: none;
+      height: 2px;
+      background-color: $primary-white;
+      width: 6.3rem;
+      margin-block: 2.4rem 10rem;
+      @media (max-width: 1000px) {
+        margin-inline: auto;
+      }
+    }
+    &_step {
+      @include display(row, 3.5rem, center, center);
+      @media (max-width: 1000px) {
+        width: 70%;
+        margin-inline: auto;
+      }
+      @media (max-width: 500px) {
+        width: 90%;
+        margin-inline: auto;
+      }
+      .circle {
+        width: 10rem;
+        height: 10rem;
+        aspect-ratio: 1/1;
+        background-color: $primary-white;
+        border-radius: 50%;
+        @include display(row, 0, center, center);
+      }
+      h3 {
+        font-family: $heading-font;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.2rem;
+        color: $primary-white;
+        margin-bottom: 1.2rem;
+      }
+      p {
+        font-family: $small-font;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+        color: $primary-white;
+      }
+      img {
+        width: 3.8rem;
+      }
+    }
+
+    .second {
+      margin-block: 8rem;
+    }
+  }
+}

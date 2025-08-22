@@ -297,4 +297,118 @@ html body h2 {
   font-size: 1.6rem;
   line-height: 2.8rem;
   color: #666666;
+}
+
+.howItWorks {
+  background-color: #fe724c;
+  padding-block: 7.8rem;
+}
+.howItWorks .container {
+  display: flex;
+  flex-direction: row;
+  gap: 12rem;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 1000px) {
+  .howItWorks .container {
+    flex-direction: column;
+  }
+}
+.howItWorks .relative {
+  position: relative;
+}
+.howItWorks .relative .absolute {
+  position: absolute;
+  z-index: 1;
+  right: -10rem;
+}
+@media (max-width: 1200px) {
+  .howItWorks .relative .absolute {
+    width: 60rem;
+  }
+}
+.howItWorks-img {
+  width: 43rem;
+  margin-right: 10rem;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 1200px) {
+  .howItWorks-img {
+    width: 30rem;
+    margin-right: 0;
+  }
+}
+.howItWorks-content h2 {
+  color: white;
+}
+@media (max-width: 1000px) {
+  .howItWorks-content h2 {
+    text-align: center;
+  }
+}
+.howItWorks-content hr {
+  border: none;
+  height: 2px;
+  background-color: white;
+  width: 6.3rem;
+  margin-block: 2.4rem 10rem;
+}
+@media (max-width: 1000px) {
+  .howItWorks-content hr {
+    margin-inline: auto;
+  }
+}
+.howItWorks-content_step {
+  display: flex;
+  flex-direction: row;
+  gap: 3.5rem;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1000px) {
+  .howItWorks-content_step {
+    width: 70%;
+    margin-inline: auto;
+  }
+}
+@media (max-width: 500px) {
+  .howItWorks-content_step {
+    width: 90%;
+    margin-inline: auto;
+  }
+}
+.howItWorks-content_step .circle {
+  width: 10rem;
+  height: 10rem;
+  aspect-ratio: 1/1;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: center;
+  justify-content: center;
+}
+.howItWorks-content_step h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.2rem;
+  color: white;
+  margin-bottom: 1.2rem;
+}
+.howItWorks-content_step p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: white;
+}
+.howItWorks-content_step img {
+  width: 3.8rem;
+}
+.howItWorks-content .second {
+  margin-block: 8rem;
 }/*# sourceMappingURL=main.css.map */
