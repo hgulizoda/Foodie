@@ -5,7 +5,7 @@
   background-position: center;
   padding-bottom: 6.4rem;
   position: relative;
-  z-index: -2;
+  z-index: 33;
   &-circle {
     position: absolute;
     width: 111.4rem;
@@ -36,7 +36,7 @@
           font-weight: 700;
           transition: all 0.3s;
           &:hover {
-            color: $primary-orange;
+            color: $gray-800;
           }
         }
       }
@@ -86,5 +86,8 @@
         }
       }
     }
+  }
+  &-image {
+    box-shadow: 17px 40px 50px 0px #0000004d;
   }
 }

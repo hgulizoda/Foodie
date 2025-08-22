@@ -41,7 +41,7 @@ html body .btn {
   background-position: center;
   padding-bottom: 6.4rem;
   position: relative;
-  z-index: -2;
+  z-index: 33;
 }
 .opening-circle {
   position: absolute;
@@ -83,7 +83,7 @@ html body .btn {
   transition: all 0.3s;
 }
 .opening .header-right_nav a:hover {
-  color: #fe724c;
+  color: #474a57;
 }
 .opening .header-right .btn {
   background-color: transparent;
@@ -134,4 +134,7 @@ html body .btn {
 .opening-bottom_content .buttons .btn:hover {
   background-color: #fe724c;
   border: 1px solid #fe724c;
+}
+.opening-image {
+  box-shadow: 17px 40px 50px 0px rgba(0, 0, 0, 0.3019607843);
 }/*# sourceMappingURL=main.css.map */
