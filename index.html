@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foodie</title>
     <link rel="stylesheet" href="./sass/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <section class="opening">
@@ -26,8 +27,10 @@
       </header>
       <div class="opening-bottom container-sm">
         <div class="opening-bottom_content">
-          <h1>Awesome App for Your Modern Lifestyle</h1>
-          <p>
+          <h1 data-aos="fade-up" data-aos-duration="1000">
+            Awesome App for Your Modern Lifestyle
+          </h1>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
             We'll help you make your plans, inform you about the best events
             happening all around the world, tell you all about the best places
             to eat in the city and much much more. 
@@ -43,27 +46,53 @@
             </button>
           </div>
         </div>
-        <img src="./assests/2.png" alt="Phone" class="opening-image" />
+        <img
+          src="./assests/2.png"
+          alt="Phone"
+          class="opening-image"
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+        />
         <div class="opening-circle"></div>
       </div>
     </section>
     <section class="about container" id="about">
       <div class="about-images">
-        <img src="./assests/Vegetables.png" alt="Vegetables" class="veggie" />
-        <img src="./assests/salmonDish.png" alt="Salmon meal" class="salmon" />
+        <img
+          src="./assests/Vegetables.png"
+          alt="Vegetables"
+          class="veggie"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        />
+        <img
+          src="./assests/salmonDish.png"
+          alt="Salmon meal"
+          class="salmon"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        />
         <img
           src="./assests/sweetBread.png"
           alt="Sweet toasted bread"
           class="bread"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="300"
         />
         <img
           src="./assests/onionSalad.png"
           alt="Salad with onion slices"
           class="onion"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="400"
         />
       </div>
       <div class="about-content">
-        <h2>About Us</h2>
+        <h2 data-aos="zoom-in-left" data-aos-duration="1000">About Us</h2>
         <hr />
         <b
           >Myresfeber is a leading city & entertainment guide filled with
@@ -95,7 +124,9 @@
     <section class="howItWorks" id="howItWorks">
       <div class="container">
         <div class="howItWorks-content">
-          <h2>How does this App Work?</h2>
+          <h2 data-aos="zoom-in-right" data-aos-duration="2000">
+            How does this App Work?
+          </h2>
           <hr />
           <div class="howItWorks-content_step">
             <div class="circle">
@@ -139,7 +170,14 @@
         </div>
         <div class="relative">
           <img src="./assests/wierdCircles.png" alt="" class="absolute" />
-          <img src="./assests/pizzaPhone.png" alt="" class="howItWorks-img" />
+          <img
+            src="./assests/pizzaPhone.png"
+            alt=""
+            class="howItWorks-img"
+            data-aos="zoom-out"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          />
         </div>
       </div>
     </section>
@@ -151,9 +189,30 @@
           <img src="./assests/icons/right-arrow.svg" alt="" />
         </div>
         <div class="screenshots-images">
-          <img src="./assests/pan.png" alt="" class="first" />
-          <img src="./assests/2.png" alt="" class="second" />
-          <img src="./assests/pizza.png" alt="" class="third" />
+          <img
+            src="./assests/pan.png"
+            alt=""
+            class="first"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          />
+          <img
+            src="./assests/2.png"
+            alt=""
+            class="second"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          />
+          <img
+            src="./assests/pizza.png"
+            alt=""
+            class="third"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          />
         </div>
         <div class="screenshots-arrow">
           <img src="./assests/icons/right-arrow.svg" alt="" />
@@ -167,7 +226,7 @@
       </p>
       <div class="container">
         <div class="testimonials-comments">
-          <div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="00">
             <div class="triangle"></div>
             <b>Efficient Collaborating</b>
             <p>
@@ -181,7 +240,7 @@
           <p class="paragraph">CEO at ABC Corporation</p>
         </div>
         <div class="testimonials-comments">
-          <div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
             <div class="triangle"></div>
             <b>Intuitive Design</b>
             <p>
@@ -195,7 +254,7 @@
           <p class="paragraph">CEO at ABC Corporation</p>
         </div>
         <div class="testimonials-comments">
-          <div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             <div class="triangle"></div>
             <b>Mindblowing Service</b>
             <p>
@@ -215,5 +274,46 @@
         <div class="circle"></div>
       </div>
     </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-left">
+          <a href="/" class="footer-logo"
+            >F<span style="color: #fe724c">oo</span>die</a
+          >
+          <nav class="footer-nav">
+            <a href="#about">About</a>
+            <a href="#howItWorks">How it works</a>
+            <a href="#footer">Contact us</a>
+            <a href="#">Help</a>
+            <a href="#">Privacy Policy</a>
+          </nav>
+          <p>© 2021 Foodie. All rights reserved</p>
+        </div>
+        <div class="footer-right">
+          <p class="subtitle">Get the App</p>
+          <div class="footer-right_buttons">
+            <button class="btn">
+              <img src="./assests/icons/appleLogo.svg" alt="" />
+              <div>
+                <p>Download on the</p>
+                <b>App Store</b>
+              </div>
+            </button>
+            <button class="btn">
+              <img src="./assests/icons/googlePlay.svg" alt="" />
+              <div>
+                <p>GET IT ON</p>
+                <b>Google Play</b>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

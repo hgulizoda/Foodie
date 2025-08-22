@@ -597,4 +597,108 @@ html body h2 {
   transform: scale(1.8);
   border: 3px solid #fe724c;
   background-color: transparent;
+}
+
+.footer {
+  background-color: #000000;
+  padding-block: 9.2rem 7.6rem;
+}
+.footer-logo {
+  font-size: 4.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  color: white;
+}
+.footer .container {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 600px) {
+  .footer .container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+  }
+}
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 2.4rem;
+  align-items: center;
+  justify-content: center;
+}
+.footer-nav a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: white;
+  margin-block: 2.6rem 1.2rem;
+  transition: all 0.3s;
+}
+.footer-nav a:hover {
+  color: #fe724c;
+}
+@media (max-width: 600px) {
+  .footer-left {
+    text-align: center;
+  }
+}
+.footer-left p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  letter-spacing: 0%;
+  color: #d9dbe1;
+}
+@media (max-width: 600px) {
+  .footer-right {
+    text-align: center;
+  }
+}
+.footer-right p.subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #d9dbe1;
+}
+.footer-right_buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1.3rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.9rem;
+}
+.footer-right_buttons .btn {
+  background-color: transparent;
+  color: white;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 1rem;
+  padding: 0.8rem 1.8rem;
+  transition: all 0.3s;
+}
+.footer-right_buttons .btn p {
+  font-size: 1rem;
+}
+.footer-right_buttons .btn b {
+  font-size: 1.9rem;
+}
+.footer-right_buttons .btn:hover {
+  background-color: #fe724c;
+  border-color: #fe724c;
+}
+.footer-right_buttons .btn img {
+  width: 1.7rem;
 }/*# sourceMappingURL=main.css.map */

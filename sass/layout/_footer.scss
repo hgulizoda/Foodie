@@ -1,0 +1,86 @@
+.footer {
+  background-color: $primary-black;
+  padding-block: 9.2rem 7.6rem;
+  &-logo {
+    font-size: 4.5rem;
+    font-family: $logo-font;
+    font-weight: 900;
+    color: $primary-white;
+  }
+  .container {
+    @include display(row, 0, center, space-between);
+    @media (max-width: 600px) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 4rem;
+    }
+  }
+  &-nav {
+    @include display(row, 2.4rem, center, center);
+    a {
+      font-family: $small-font;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      color: $primary-white;
+      margin-block: 2.6rem 1.2rem;
+      transition: all 0.3s;
+      &:hover {
+        color: $primary-orange;
+      }
+    }
+  }
+  &-left {
+    @media (max-width: 600px) {
+      text-align: center;
+    }
+    p {
+      font-family: $small-font;
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 2.4rem;
+      letter-spacing: 0%;
+      color: $gray-300;
+    }
+  }
+
+  &-right {
+    @media (max-width: 600px) {
+      text-align: center;
+    }
+    p.subtitle {
+      font-family: $heading-font;
+      font-weight: 500;
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+      color: $gray-300;
+    }
+    &_buttons {
+      @include display(row, 1.3rem, center, center);
+      margin-top: 0.9rem;
+      .btn {
+        background-color: transparent;
+        color: white;
+        text-align: left;
+        @include display(row, 1rem, center, center);
+        border: 1px solid $primary-white;
+        border-radius: 1rem;
+        padding: 0.8rem 1.8rem;
+        transition: all 0.3s;
+        p {
+          font-size: 1rem;
+        }
+        b {
+          font-size: 1.9rem;
+        }
+        &:hover {
+          background-color: $primary-orange;
+          border-color: $primary-orange;
+        }
+        img {
+          width: 1.7rem;
+        }
+      }
+    }
+  }
+}
