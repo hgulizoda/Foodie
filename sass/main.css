@@ -481,4 +481,120 @@ html body h2 {
 }
 .screenshots-arrow img {
   width: 2.2rem;
+}
+
+.testimonials {
+  padding-block: 7rem;
+  background-color: #f4f5f7;
+}
+.testimonials h2 {
+  text-align: center;
+}
+.testimonials p.subheading {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  margin-block: 2rem 4rem;
+}
+.testimonials .container {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1024px) {
+  .testimonials .container {
+    flex-wrap: wrap;
+  }
+}
+.testimonials-comments {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: center;
+  justify-content: center;
+}
+.testimonials-comments div {
+  background-color: white;
+  width: 35rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  position: relative;
+  margin-inline: auto;
+}
+.testimonials-comments div .triangle {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  border-radius: 0.3rem;
+  transform: rotate(45deg);
+  bottom: -10%;
+}
+.testimonials-comments div b {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  text-align: center;
+  color: #18191f;
+}
+.testimonials-comments div p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-align: center;
+  color: #18191f;
+}
+.testimonials-comments .accImg {
+  width: 5.6rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin-top: 4rem;
+  margin-inline: auto;
+}
+.testimonials-comments .bold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  text-align: center;
+  color: #18191f;
+}
+.testimonials-comments .paragraph {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-align: center;
+  color: #474a57;
+}
+.testimonials .circles {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.testimonials .circles .circle {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: #fe724c;
+  transition: all 0.3s;
+}
+.testimonials .circles .circle:hover {
+  transform: scale(1.8);
+  border: 3px solid #fe724c;
+  background-color: transparent;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,99 @@
+.testimonials {
+  padding-block: 7rem;
+  background-color: $gray-100;
+  h2 {
+    text-align: center;
+  }
+  p.subheading {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    margin-block: 2rem 4rem;
+  }
+  .container {
+    @include display(row, 3rem, center, center);
+    @media (max-width: 1024px) {
+      flex-wrap: wrap;
+    }
+  }
+  &-comments {
+    @include display(column, 0, center, center);
+
+    div {
+      background-color: $primary-white;
+      width: 35rem;
+      height: 20rem;
+      @include display(column, 1rem, center, center);
+      padding: 2rem;
+      border-radius: 1rem;
+      position: relative;
+      margin-inline: auto;
+
+      .triangle {
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        background-color: $primary-white;
+        border-radius: 0.3rem;
+        transform: rotate(45deg);
+        bottom: -10%;
+      }
+      b {
+        font-family: $heading-font;
+        font-weight: 600;
+        font-size: 2.2rem;
+        line-height: 3.2rem;
+        text-align: center;
+        color: $gray-900;
+      }
+      p {
+        font-family: $small-font;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        text-align: center;
+        color: $gray-900;
+      }
+    }
+    .accImg {
+      width: 5.6rem;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      margin-top: 4rem;
+      margin-inline: auto;
+    }
+    .bold {
+      font-family: $heading-font;
+      font-weight: 700;
+      font-size: 1.6rem;
+      line-height: 2.8rem;
+      text-align: center;
+      color: $gray-900;
+    }
+    .paragraph {
+      font-family: $small-font;
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+      text-align: center;
+      color: $gray-800;
+    }
+  }
+  .circles {
+    @include display(row, 1.2rem, center, center);
+    margin-top: 4rem;
+    .circle {
+      width: 0.8rem;
+      height: 0.8rem;
+      border-radius: 50%;
+      background-color: $primary-orange;
+      transition: all 0.3s;
+      &:hover {
+        transform: scale(1.8);
+        border: 3px solid $primary-orange;
+        background-color: transparent;
+      }
+    }
+  }
+}
