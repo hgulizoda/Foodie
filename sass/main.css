@@ -411,4 +411,74 @@ html body h2 {
 }
 .howItWorks-content .second {
   margin-block: 8rem;
+}
+
+.screenshots {
+  padding-block: 7.8rem;
+}
+.screenshots h2 {
+  text-align: center;
+}
+.screenshots hr {
+  height: 2px;
+  border: none;
+  width: 63px;
+  background-color: #fe724c;
+  margin: 2.2rem auto 4.2rem;
+}
+.screenshots .container {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.screenshots-images {
+  display: flex;
+  flex-direction: row;
+  gap: 9rem;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1200px) {
+  .screenshots-images {
+    flex-wrap: wrap;
+  }
+}
+.screenshots-images img {
+  height: 58rem;
+}
+@media (max-width: 1200px) {
+  .screenshots-images img.third {
+    display: none;
+  }
+}
+@media (max-width: 530px) {
+  .screenshots-images img.second {
+    display: none;
+  }
+}
+.screenshots-arrow {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  aspect-ratio: 1/1;
+}
+.screenshots-arrow:hover {
+  background-color: #d9dbe1;
+  transform: scale(1.1);
+  border-color: #d9dbe1;
+}
+.screenshots-arrow.left {
+  transform: scale(-1);
+}
+.screenshots-arrow img {
+  width: 2.2rem;
 }/*# sourceMappingURL=main.css.map */
