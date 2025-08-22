@@ -15,6 +15,13 @@
     z-index: -1;
     bottom: 6.4rem;
     right: -20.4rem;
+    @media (max-width: 1200px) {
+      width: 80rem;
+      height: 80rem;
+    }
+    @media (max-width: 850px) {
+      display: none;
+    }
   }
   .header {
     padding-block: 5.7rem;
@@ -38,6 +45,16 @@
           &:hover {
             color: $gray-800;
           }
+          @media (max-width: 1200px) {
+            display: none;
+          }
+        }
+      }
+      img {
+        display: none;
+        @media (max-width: 1200px) {
+          display: inline-block;
+          width: 3.2rem;
         }
       }
       .btn {
@@ -56,12 +73,22 @@
   &-bottom {
     z-index: 3;
     @include display(row, 20rem, center, space-between);
+    @media (max-width: 850px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 10rem;
+    }
 
     &_content {
       h1 {
         font-size: 4.6rem;
         color: $primary-white;
         font-family: $heading-font;
+        @media (max-width: 850px) {
+          text-align: center;
+          width: 80%;
+          margin-inline: auto;
+        }
       }
       p {
         font-family: $small-font;
@@ -69,9 +96,18 @@
         line-height: 2.3rem;
         color: $primary-white;
         margin-block: 2.7rem;
+        opacity: 0.8;
+        @media (max-width: 850px) {
+          text-align: center;
+          width: 80%;
+          margin-inline: auto;
+        }
       }
       .buttons {
         @include display(row, 1.6rem, center, left);
+        @media (max-width: 850px) {
+          justify-content: center;
+        }
         .btn {
           gap: 1rem;
           background-color: transparent;
@@ -83,11 +119,17 @@
             background-color: $primary-orange;
             border: 1px solid $primary-orange;
           }
+          img {
+            width: 2.7rem;
+          }
         }
       }
     }
   }
   &-image {
     box-shadow: 17px 40px 50px 0px #0000004d;
+    @media (max-width: 1200px) {
+      width: 30rem;
+    }
   }
 }
