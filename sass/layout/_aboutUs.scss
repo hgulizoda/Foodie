@@ -1,0 +1,69 @@
+.about {
+  @include display(row, 6rem, center, space-between);
+  @media (max-width: 850px) {
+    flex-direction: column-reverse;
+  }
+  margin-block: 7.3rem 10.4rem;
+  &-images {
+    display: grid;
+    @media (max-width: 850px) {
+      width: 80%;
+    }
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-areas:
+      "v v . ."
+      "v v s s"
+      "v v s s"
+      "v v s s"
+      "v v s s"
+      "b o o o"
+      "b o o o"
+      "b o o o"
+      "b o o o"
+      ". o o o";
+    gap: 2rem;
+    .veggie {
+      grid-area: v;
+    }
+    .onion {
+      grid-area: o;
+    }
+    .bread {
+      grid-area: b;
+    }
+    .salmon {
+      grid-area: s;
+    }
+    img {
+      object-fit: cover;
+      object-position: center;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &-content {
+    width: 100%;
+    hr {
+      border: none;
+      height: 2px;
+      background-color: $primary-yellow;
+      width: 43px;
+      margin-block: 2rem 2.2rem;
+    }
+    b {
+      font-family: $small-font;
+      font-weight: 700;
+      font-size: 1.6rem;
+      line-height: 2.8rem;
+    }
+    p {
+      margin-top: 2rem;
+      font-family: $small-font;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 2.8rem;
+      color: $gray-600;
+    }
+  }
+}

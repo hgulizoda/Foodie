@@ -59,6 +59,11 @@ html body .btn {
   align-items: center;
   justify-content: center;
 }
+html body h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+}
 
 .opening {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assests/heroImage.png");
@@ -222,4 +227,74 @@ html body .btn {
   .opening-image {
     width: 30rem;
   }
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 7.3rem 10.4rem;
+}
+@media (max-width: 850px) {
+  .about {
+    flex-direction: column-reverse;
+  }
+}
+.about-images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-areas: "v v . ." "v v s s" "v v s s" "v v s s" "v v s s" "b o o o" "b o o o" "b o o o" "b o o o" ". o o o";
+  gap: 2rem;
+}
+@media (max-width: 850px) {
+  .about-images {
+    width: 80%;
+  }
+}
+.about-images .veggie {
+  grid-area: v;
+}
+.about-images .onion {
+  grid-area: o;
+}
+.about-images .bread {
+  grid-area: b;
+}
+.about-images .salmon {
+  grid-area: s;
+}
+.about-images img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 100%;
+  width: 100%;
+}
+.about-content {
+  width: 100%;
+}
+.about-content hr {
+  border: none;
+  height: 2px;
+  background-color: #efca08;
+  width: 43px;
+  margin-block: 2rem 2.2rem;
+}
+.about-content b {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
+.about-content p {
+  margin-top: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: #666666;
 }/*# sourceMappingURL=main.css.map */
